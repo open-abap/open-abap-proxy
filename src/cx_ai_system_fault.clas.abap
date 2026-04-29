@@ -1,0 +1,7 @@
+CLASS cx_ai_system_fault DEFINITION PUBLIC INHERITING FROM cx_static_check.
+
+ENDCLASS.
+
+CLASS cx_ai_system_fault IMPLEMENTATION.
+
+ENDCLASS.

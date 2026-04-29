@@ -1,0 +1,3 @@
+INTERFACE if_wsprotocol PUBLIC.
+
+ENDINTERFACE.
