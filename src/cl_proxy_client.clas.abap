@@ -1,4 +1,4 @@
-CLASS cl_proxy_client DEFINITION PUBLIC.
+CLASS cl_proxy_client DEFINITION PUBLIC INHERITING FROM cl_proxy_basis.
   PUBLIC SECTION.
     INTERFACES if_proxy_client.
 
@@ -10,13 +10,6 @@ CLASS cl_proxy_client DEFINITION PUBLIC.
       RAISING
         cx_ai_system_fault.
 
-    METHODS get_protocol
-      IMPORTING
-        protocol_name   TYPE string
-      RETURNING
-        VALUE(protocol) TYPE REF TO if_wsprotocol
-      RAISING
-        cx_ai_system_fault.
 ENDCLASS.
 
 CLASS cl_proxy_client IMPLEMENTATION.
@@ -26,10 +19,6 @@ CLASS cl_proxy_client IMPLEMENTATION.
   ENDMETHOD.
 
   METHOD if_proxy_client~execute.
-    RETURN.
-  ENDMETHOD.
-
-  METHOD get_protocol.
     RETURN.
   ENDMETHOD.
 
