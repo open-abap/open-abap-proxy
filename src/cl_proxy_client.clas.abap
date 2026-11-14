@@ -15,7 +15,7 @@ ENDCLASS.
 CLASS cl_proxy_client IMPLEMENTATION.
 
   METHOD constructor.
-    RETURN.
+    super->constructor( ).
   ENDMETHOD.
 
   METHOD if_proxy_client~execute.
