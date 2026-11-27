@@ -7,6 +7,7 @@ CLASS cl_proxy_client DEFINITION PUBLIC INHERITING FROM cl_proxy_basis.
         intf_name         TYPE clike OPTIONAL
         class_name        TYPE clike OPTIONAL
         logical_port_name TYPE clike OPTIONAL
+        destination       TYPE REF TO object OPTIONAL
       RAISING
         cx_ai_system_fault.
 
